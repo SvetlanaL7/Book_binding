@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllBooksViewController" customModule="Book_binding" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsY-kJ-P1Y" customClass="GradientView" customModule="Book_binding" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                            <point key="value" x="0.0" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" name="BackgroundGradientColorUp"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" name="BackgroundGradientColorDown"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SGI-oI-pjs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lsY-kJ-P1Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6va-BU-Fvr"/>
+                <constraint firstItem="lsY-kJ-P1Y" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HrQ-K8-kTy"/>
+                <constraint firstItem="SGI-oI-pjs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LDs-37-1og"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SGI-oI-pjs" secondAttribute="trailing" id="T9d-Mp-M5q"/>
+                <constraint firstItem="lsY-kJ-P1Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gZD-4o-vUt"/>
+                <constraint firstAttribute="bottom" secondItem="SGI-oI-pjs" secondAttribute="bottom" id="shg-eI-LuL"/>
+                <constraint firstItem="SGI-oI-pjs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vhv-ga-gBp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lsY-kJ-P1Y" secondAttribute="trailing" id="wm7-53-Jgk"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                    <color key="value" name="BackgroundGradientColorUp"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                    <color key="value" name="BackgroundGradientColorDown"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundGradientColorDown">
+            <color red="0.99607843137254903" green="0.71372549019607845" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundGradientColorUp">
+            <color red="0.95686274509803926" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

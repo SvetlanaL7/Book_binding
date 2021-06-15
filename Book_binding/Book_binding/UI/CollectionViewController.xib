@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewController" customModule="Book_binding" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionBookView" destination="tIg-Ba-nq6" id="fvC-F9-DlZ"/>
+                <outlet property="collectionView" destination="tIg-Ba-nq6" id="l5t-3r-IUS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-lt-pkw" customClass="GradientView" customModule="Book_binding" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" name="BackgroundGradientColorUp"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" name="BackgroundGradientColorDown"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tIg-Ba-nq6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lBE-Do-kr0">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="f7o-lt-pkw" secondAttribute="bottom" id="5HO-Ch-3nm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f7o-lt-pkw" secondAttribute="trailing" id="90B-6q-eeM"/>
+                <constraint firstItem="f7o-lt-pkw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YS9-gr-sOY"/>
+                <constraint firstItem="f7o-lt-pkw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kcO-oU-sW0"/>
+            </constraints>
+            <point key="canvasLocation" x="95.652173913043484" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundGradientColorDown">
+            <color red="0.99607843137254903" green="0.71372549019607845" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundGradientColorUp">
+            <color red="0.95686274509803926" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
