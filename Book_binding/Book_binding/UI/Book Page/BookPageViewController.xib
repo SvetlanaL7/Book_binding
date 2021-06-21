@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookPageViewController" customModule="Book_binding" customModuleProvider="target">
+            <connections>
+                <outlet property="authorLabel" destination="6kT-Lk-PAl" id="Afp-ng-d1o"/>
+                <outlet property="textTextView" destination="Mtf-He-X0f" id="5A8-kJ-Q3x"/>
+                <outlet property="titleLabel" destination="JKz-Cf-k8Q" id="Th8-Vl-e85"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="Book_binding" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-Vb-MdD" customClass="RoundedMain" customModule="Book_binding" customModuleProvider="target">
+                    <rect key="frame" x="8" y="52" width="398" height="286"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мастер и Маргарита" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKz-Cf-k8Q">
+                            <rect key="frame" x="168" y="16" width="188" height="23"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="М. А. Булгаков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kT-Lk-PAl">
+                            <rect key="frame" x="168" y="47" width="118" height="20.5"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-Qj-hDV">
+                            <rect key="frame" x="168" y="103.5" width="103" height="30"/>
+                            <color key="backgroundColor" name="ButtonColor"/>
+                            <state key="normal" title="Цитаты">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVy-sK-Mls">
+                            <rect key="frame" x="168" y="149.5" width="103" height="30"/>
+                            <color key="backgroundColor" name="ButtonColor"/>
+                            <state key="normal" title="Викторины">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-pK-i9w" customClass="RoundedView" customModule="Book_binding" customModuleProvider="target">
+                            <rect key="frame" x="10" y="16" width="148" height="226"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="mLe-El-oAf">
+                                    <rect key="frame" x="0.0" y="0.0" width="148" height="226"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="mLe-El-oAf" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="leading" id="DcN-V4-Uhz"/>
+                                <constraint firstAttribute="trailing" secondItem="mLe-El-oAf" secondAttribute="trailing" id="J9Y-e2-YNQ"/>
+                                <constraint firstItem="mLe-El-oAf" firstAttribute="top" secondItem="2CW-pK-i9w" secondAttribute="top" id="TKQ-v0-jtx"/>
+                                <constraint firstAttribute="bottom" secondItem="mLe-El-oAf" secondAttribute="bottom" id="TPF-2y-4Sc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstItem="JKz-Cf-k8Q" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="A4z-20-89k"/>
+                        <constraint firstItem="2CW-pK-i9w" firstAttribute="top" secondItem="B4e-Vb-MdD" secondAttribute="top" constant="16" id="Dxr-23-LSK"/>
+                        <constraint firstItem="wVy-sK-Mls" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="Emi-Hj-cOe"/>
+                        <constraint firstItem="6kT-Lk-PAl" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="FWd-rN-9tB"/>
+                        <constraint firstItem="6kT-Lk-PAl" firstAttribute="top" secondItem="JKz-Cf-k8Q" secondAttribute="bottom" constant="8" id="Myq-Ec-R8k"/>
+                        <constraint firstAttribute="trailing" secondItem="6kT-Lk-PAl" secondAttribute="trailing" constant="112" id="OAQ-Z8-aE4"/>
+                        <constraint firstItem="wVy-sK-Mls" firstAttribute="top" secondItem="a2l-Qj-hDV" secondAttribute="bottom" constant="16" id="SX1-Ib-Ili"/>
+                        <constraint firstItem="JKz-Cf-k8Q" firstAttribute="top" secondItem="B4e-Vb-MdD" secondAttribute="top" constant="16" id="UHF-qz-UG7"/>
+                        <constraint firstItem="a2l-Qj-hDV" firstAttribute="top" secondItem="6kT-Lk-PAl" secondAttribute="bottom" constant="36" id="WHF-0j-Zt2"/>
+                        <constraint firstAttribute="trailing" secondItem="wVy-sK-Mls" secondAttribute="trailing" constant="127" id="Yax-a4-7su"/>
+                        <constraint firstAttribute="bottom" secondItem="2CW-pK-i9w" secondAttribute="bottom" constant="44" id="imb-wo-SpT"/>
+                        <constraint firstAttribute="trailing" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="240" id="ks3-cc-iqv"/>
+                        <constraint firstItem="a2l-Qj-hDV" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="ltj-Yk-aeM"/>
+                        <constraint firstAttribute="trailing" secondItem="a2l-Qj-hDV" secondAttribute="trailing" constant="127" id="vQ8-8s-Rro"/>
+                        <constraint firstItem="2CW-pK-i9w" firstAttribute="leading" secondItem="B4e-Vb-MdD" secondAttribute="leading" constant="10" id="xaT-pN-yFd"/>
+                        <constraint firstAttribute="trailing" secondItem="JKz-Cf-k8Q" secondAttribute="trailing" constant="42" id="xj7-L4-7VI"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eHn-Z9-LY7">
+                    <rect key="frame" x="8" y="354" width="398" height="40"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <segments>
+                        <segment title="Описание"/>
+                        <segment title="О книге"/>
+                        <segment title="Об авторе"/>
+                    </segments>
+                    <color key="tintColor" name="ButtonColor"/>
+                    <color key="selectedSegmentTintColor" name="ButtonColor"/>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-7a-Otn" customClass="RoundedMain" customModule="Book_binding" customModuleProvider="target">
+                    <rect key="frame" x="8" y="409" width="398" height="471"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mtf-He-X0f">
+                            <rect key="frame" x="16" y="16" width="366" height="439"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Mtf-He-X0f" secondAttribute="bottom" constant="16" id="VuD-xY-Noa"/>
+                        <constraint firstItem="Mtf-He-X0f" firstAttribute="leading" secondItem="bQE-7a-Otn" secondAttribute="leading" constant="16" id="io9-mU-HmI"/>
+                        <constraint firstAttribute="trailing" secondItem="Mtf-He-X0f" secondAttribute="trailing" constant="16" id="sQa-Mf-g42"/>
+                        <constraint firstItem="Mtf-He-X0f" firstAttribute="top" secondItem="bQE-7a-Otn" secondAttribute="top" constant="16" id="udQ-2X-x1l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eHn-Z9-LY7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="02O-Xa-2dG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B4e-Vb-MdD" secondAttribute="trailing" constant="8" id="GFk-dZ-ARO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eHn-Z9-LY7" secondAttribute="bottom" constant="469" id="GIW-1t-oa6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="B4e-Vb-MdD" secondAttribute="bottom" constant="524" id="GZb-L5-BHj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bQE-7a-Otn" secondAttribute="trailing" constant="8" id="GuB-JC-fo1"/>
+                <constraint firstItem="B4e-Vb-MdD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="SgT-p1-otr"/>
+                <constraint firstAttribute="bottom" secondItem="bQE-7a-Otn" secondAttribute="bottom" constant="16" id="Wcx-lh-CAs"/>
+                <constraint firstItem="B4e-Vb-MdD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="XlT-IA-9tD"/>
+                <constraint firstItem="eHn-Z9-LY7" firstAttribute="top" secondItem="B4e-Vb-MdD" secondAttribute="bottom" constant="16" id="dxS-Lv-H9M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eHn-Z9-LY7" secondAttribute="trailing" constant="8" id="eqL-50-tHQ"/>
+                <constraint firstItem="bQE-7a-Otn" firstAttribute="top" secondItem="eHn-Z9-LY7" secondAttribute="bottom" constant="16" id="g7k-MB-oNl"/>
+                <constraint firstItem="bQE-7a-Otn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="vC3-RA-ns7"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                    <color key="value" name="BackgroundGradientColorUp"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                    <color key="value" name="BackgroundGradientColorDown"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="95.652173913043484" y="88.392857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Book1" width="757" height="1200"/>
+        <namedColor name="AccentColor">
+            <color red="0.99215686274509807" green="0.90196078431372551" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundGradientColorDown">
+            <color red="0.99607843137254903" green="0.71372549019607845" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundGradientColorUp">
+            <color red="0.95686274509803926" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonColor">
+            <color red="0.88627450980392153" green="0.60784313725490191" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

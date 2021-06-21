@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BooksCollectionViewCell" customModule="Book_binding" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PY7-qs-MfE" customClass="RoundedView" customModule="Book_binding" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKR-qi-DbQ" customClass="RoundedView" customModule="Book_binding" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yvR-jY-l7n">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yvR-jY-l7n" secondAttribute="trailing" id="3MB-rh-QBz"/>
+                                    <constraint firstAttribute="bottom" secondItem="yvR-jY-l7n" secondAttribute="bottom" id="5YJ-dB-Gsh"/>
+                                    <constraint firstItem="yvR-jY-l7n" firstAttribute="leading" secondItem="fKR-qi-DbQ" secondAttribute="leading" id="A39-W2-zXf"/>
+                                    <constraint firstAttribute="trailing" secondItem="yvR-jY-l7n" secondAttribute="trailing" id="FJt-Hr-dlh"/>
+                                    <constraint firstItem="yvR-jY-l7n" firstAttribute="top" secondItem="fKR-qi-DbQ" secondAttribute="top" id="GtK-cr-CR0"/>
+                                    <constraint firstItem="yvR-jY-l7n" firstAttribute="top" secondItem="fKR-qi-DbQ" secondAttribute="top" id="R2C-Zx-weI"/>
+                                    <constraint firstAttribute="bottom" secondItem="yvR-jY-l7n" secondAttribute="bottom" id="Wpq-Mb-Dsk"/>
+                                    <constraint firstItem="yvR-jY-l7n" firstAttribute="leading" secondItem="fKR-qi-DbQ" secondAttribute="leading" id="rDv-qB-Sox"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="tintColor" name="ButtonTextColor"/>
+                        <constraints>
+                            <constraint firstItem="fKR-qi-DbQ" firstAttribute="leading" secondItem="PY7-qs-MfE" secondAttribute="leading" constant="10" id="MfU-UG-qvF"/>
+                            <constraint firstAttribute="bottom" secondItem="fKR-qi-DbQ" secondAttribute="bottom" constant="10" id="SUa-9M-7Zo"/>
+                            <constraint firstAttribute="trailing" secondItem="fKR-qi-DbQ" secondAttribute="trailing" constant="10" id="WG4-98-K0P"/>
+                            <constraint firstItem="fKR-qi-DbQ" firstAttribute="top" secondItem="PY7-qs-MfE" secondAttribute="top" constant="10" id="gND-z6-APb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PY7-qs-MfE" secondAttribute="trailing" id="5hf-1I-Df0"/>
+                <constraint firstItem="PY7-qs-MfE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MFZ-0P-tI4"/>
+                <constraint firstItem="PY7-qs-MfE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XBp-2r-bGN"/>
+                <constraint firstAttribute="bottom" secondItem="PY7-qs-MfE" secondAttribute="bottom" id="gKe-d7-eKN"/>
+            </constraints>
+            <connections>
+                <outlet property="booksImageView" destination="yvR-jY-l7n" id="cu4-3B-w1H"/>
+            </connections>
+            <point key="canvasLocation" x="97" y="70"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.99215686274509807" green="0.90196078431372551" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonTextColor">
+            <color red="0.85490196078431369" green="0.42352941176470588" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
