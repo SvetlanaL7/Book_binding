@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //указываем ViewController для отображения
-        let viewController = QuotesViewController() //BookPageViewController()
+        let viewController = BookPageViewController()
+            //QuotesViewController()
             //BooksViewController() //CollectionViewController()
         //CollectionBookViewController()
         //AllBooksViewController()

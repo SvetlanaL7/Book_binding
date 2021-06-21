@@ -67,10 +67,21 @@
                                 <constraint firstAttribute="bottom" secondItem="mLe-El-oAf" secondAttribute="bottom" id="TPF-2y-4Sc"/>
                             </constraints>
                         </view>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="clH-j1-EVy">
+                            <rect key="frame" x="16" y="247" width="366" height="32"/>
+                            <segments>
+                                <segment title="Новая книга" width="90"/>
+                                <segment title="Хочу прочитать" width="115"/>
+                                <segment title="Читаю" width="60"/>
+                                <segment title="Прочитал"/>
+                            </segments>
+                            <color key="selectedSegmentTintColor" name="BorderColor"/>
+                        </segmentedControl>
                     </subviews>
                     <color key="backgroundColor" name="AccentColor"/>
                     <constraints>
                         <constraint firstItem="JKz-Cf-k8Q" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="A4z-20-89k"/>
+                        <constraint firstItem="clH-j1-EVy" firstAttribute="leading" secondItem="B4e-Vb-MdD" secondAttribute="leading" constant="16" id="BoD-Jl-xdq"/>
                         <constraint firstItem="2CW-pK-i9w" firstAttribute="top" secondItem="B4e-Vb-MdD" secondAttribute="top" constant="16" id="Dxr-23-LSK"/>
                         <constraint firstItem="wVy-sK-Mls" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="Emi-Hj-cOe"/>
                         <constraint firstItem="6kT-Lk-PAl" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="FWd-rN-9tB"/>
@@ -78,8 +89,10 @@
                         <constraint firstAttribute="trailing" secondItem="6kT-Lk-PAl" secondAttribute="trailing" constant="112" id="OAQ-Z8-aE4"/>
                         <constraint firstItem="wVy-sK-Mls" firstAttribute="top" secondItem="a2l-Qj-hDV" secondAttribute="bottom" constant="16" id="SX1-Ib-Ili"/>
                         <constraint firstItem="JKz-Cf-k8Q" firstAttribute="top" secondItem="B4e-Vb-MdD" secondAttribute="top" constant="16" id="UHF-qz-UG7"/>
+                        <constraint firstAttribute="bottom" secondItem="clH-j1-EVy" secondAttribute="bottom" constant="8" id="URq-5F-ATm"/>
                         <constraint firstItem="a2l-Qj-hDV" firstAttribute="top" secondItem="6kT-Lk-PAl" secondAttribute="bottom" constant="36" id="WHF-0j-Zt2"/>
                         <constraint firstAttribute="trailing" secondItem="wVy-sK-Mls" secondAttribute="trailing" constant="127" id="Yax-a4-7su"/>
+                        <constraint firstAttribute="trailing" secondItem="clH-j1-EVy" secondAttribute="trailing" constant="16" id="Zj6-cb-uM9"/>
                         <constraint firstAttribute="bottom" secondItem="2CW-pK-i9w" secondAttribute="bottom" constant="44" id="imb-wo-SpT"/>
                         <constraint firstAttribute="trailing" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="240" id="ks3-cc-iqv"/>
                         <constraint firstItem="a2l-Qj-hDV" firstAttribute="leading" secondItem="2CW-pK-i9w" secondAttribute="trailing" constant="10" id="ltj-Yk-aeM"/>
@@ -155,6 +168,9 @@
         </namedColor>
         <namedColor name="BackgroundGradientColorUp">
             <color red="0.95686274509803926" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BorderColor">
+            <color red="0.99607843137254903" green="0.71372549019607845" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ButtonColor">
             <color red="0.88627450980392153" green="0.60784313725490191" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
